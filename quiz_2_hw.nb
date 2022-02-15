@@ -1,0 +1,169 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5852,        159]
+NotebookOptionsPosition[      4830,        134]
+NotebookOutlinePosition[      5274,        151]
+CellTagsIndexPosition[      5231,        148]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Quit", "[", "]"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.853264705118746*^9, 3.853264707602662*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"b24491ca-a966-4fc4-b2d0-0690c74ea10a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", " ", "=", " ", "7.4"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"b", " ", "=", " ", "3."}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"c", " ", "=", " ", "6.1"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"T", " ", "=", " ", "7.6"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"netHoriz", " ", "=", " ", 
+     RowBox[{"a", " ", "+", " ", "b"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"\[Theta]", " ", "=", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"ArcTan", "[", 
+       RowBox[{"c", " ", "/", " ", "netHoriz"}], "]"}], " ", "/", " ", 
+      "Degree"}], " ", "//", "FullSimplify"}]}], "\[IndentingNewLine]", 
+   RowBox[{"Tvec", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"T", " ", "*", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Theta]", " ", "Degree"}], "]"}]}], ",", " ", 
+      RowBox[{"T", " ", "*", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Theta]", " ", "Degree"}], "]"}]}]}], "}"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8532647116492805`*^9, 3.853264858608636*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"888070a6-5360-4c43-85b0-df2918b2af54"],
+
+Cell[BoxData["30.393262645553`"], "Output",
+ CellChangeTimes->{3.8532647943813076`*^9, 3.853264859348322*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"309e6991-d345-4d95-a2d2-040bc4f99dd8"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"6.555556071156547`", ",", "3.845085772505281`"}], "}"}]], "Output",
+ CellChangeTimes->{3.8532647943813076`*^9, 3.853264859360545*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"559683dd-4880-49a9-b82a-06468e68d131"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", " ", "=", " ", "0.45"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"AO", " ", "=", " ", "0.730"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Theta]", " ", "=", " ", "33."}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"\[Alpha]", " ", "=", " ", "12."}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rComp", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"AO", " ", "*", " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Theta]", " ", "Degree"}], "]"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{"-", "AO"}], " ", "*", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Theta]", " ", "Degree"}], "]"}]}], ",", " ", "0"}], 
+      "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fComp", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"f", " ", "*", " ", 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Alpha]", " ", "Degree"}], "]"}]}], ",", " ", 
+       RowBox[{
+        RowBox[{"-", "f"}], " ", "*", " ", 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Alpha]", " ", "Degree"}], "]"}]}], ",", " ", "0"}], 
+      "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"MomO", " ", "=", " ", 
+    RowBox[{"Cross", "[", 
+     RowBox[{"rComp", ",", " ", "fComp"}], "]"}]}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.853264999808406*^9, 3.853265003802915*^9}, {
+  3.853265044525836*^9, 3.853265065442768*^9}, {3.8532651128388696`*^9, 
+  3.8532652017128873`*^9}, {3.8532652467909193`*^9, 3.853265308916994*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"0dde069d-b3d3-49a7-9cf4-ae9bee933e5b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.`", ",", "0.`", ",", 
+   RowBox[{"-", "0.23228457761978086`"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.853265200140824*^9, {3.8532652758840165`*^9, 3.8532653097518067`*^9}},
+ CellLabel->"Out[63]=",ExpressionUUID->"c4fa74f9-9bc1-47e1-8a87-b90d8506b9bc"]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{
+  3.8532647927673764`*^9},ExpressionUUID->"075681cd-7d8e-442f-921f-\
+acb8d8fe4d7c"]
+},
+WindowSize->{1152., 586.5},
+WindowMargins->{{
+  Automatic, -4.7999999999999545`}, {-4.7999999999999545`, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"679c2e6a-8310-4c1e-beec-4237b604233e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 269, 5, 67, "Input",ExpressionUUID->"b24491ca-a966-4fc4-b2d0-0690c74ea10a"],
+Cell[CellGroupData[{
+Cell[852, 29, 1268, 31, 181, "Input",ExpressionUUID->"888070a6-5360-4c43-85b0-df2918b2af54"],
+Cell[2123, 62, 188, 2, 32, "Output",ExpressionUUID->"309e6991-d345-4d95-a2d2-040bc4f99dd8"],
+Cell[2314, 66, 252, 4, 32, "Output",ExpressionUUID->"559683dd-4880-49a9-b82a-06468e68d131"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2603, 75, 1757, 43, 219, "Input",ExpressionUUID->"0dde069d-b3d3-49a7-9cf4-ae9bee933e5b"],
+Cell[4363, 120, 299, 6, 55, "Output",ExpressionUUID->"c4fa74f9-9bc1-47e1-8a87-b90d8506b9bc"]
+}, Open  ]],
+Cell[4677, 129, 149, 3, 48, "Input",ExpressionUUID->"075681cd-7d8e-442f-921f-acb8d8fe4d7c"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
