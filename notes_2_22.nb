@@ -1,0 +1,69 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1917,         61]
+NotebookOptionsPosition[      1450,         46]
+NotebookOutlinePosition[      1875,         62]
+CellTagsIndexPosition[      1832,         59]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Quit", "[", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Notes", " ", "-", " ", 
+     RowBox[{
+      RowBox[{"2", "/", "22"}], "/", "2022"}]}], "*)"}]}]}]], "Input",
+ CellChangeTimes->{{3.854526578007903*^9, 3.8545265881610003`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"d82fd504-2a2d-4c85-bb9d-20f57dc58b2e"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"F1", " ", "=", " ", 
+   RowBox[{"700.", "*", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{"60.", " ", "Degree"}], "]"}], ",", " ", "0.", ",", " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"60.", " ", "Degree"}], "]"}]}], "}"}]}]}]}]], "Input",
+ CellChangeTimes->{
+  3.8545265889799795`*^9, {3.854527650718636*^9, 
+   3.854527666172597*^9}},ExpressionUUID->"0b9f4add-efbc-4a8b-b531-\
+6765da058c50"]
+},
+WindowSize->{573.9, 530.1},
+WindowMargins->{{283.5, Automatic}, {15.899999999999977`, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"59304a27-a27b-40ec-a62d-91c14cff53e5"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 398, 9, 67, "Input",ExpressionUUID->"d82fd504-2a2d-4c85-bb9d-20f57dc58b2e"],
+Cell[959, 31, 487, 13, 48, "Input",ExpressionUUID->"0b9f4add-efbc-4a8b-b531-6765da058c50"]
+}
+]
+*)
+
