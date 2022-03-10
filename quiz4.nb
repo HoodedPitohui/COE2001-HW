@@ -1,0 +1,181 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5938,        171]
+NotebookOptionsPosition[      5169,        151]
+NotebookOutlinePosition[      5577,        167]
+CellTagsIndexPosition[      5534,        164]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Quit", "[", "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.8557786768317842`*^9, 3.8557786805483885`*^9}},
+ CellLabel->
+  "In[331]:=",ExpressionUUID->"e9783ed1-c9ab-4d47-b668-6a7d90524c95"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"len", " ", "=", " ", "1.6"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ang", " ", "=", " ", "49."}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"w", " ", "=", " ", "75."}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "b"}], " ", "*", " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"ang", " ", "Degree"}], "]"}]}], ",", " ", 
+     RowBox[{"b", " ", "*", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"ang", " ", "Degree"}], "]"}]}], ",", " ", "0."}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"f2", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"c", " ", "*", " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Alpha]", " ", "Degree"}], "]"}]}], ",", " ", 
+     RowBox[{"c", " ", "*", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Alpha]", " ", "Degree"}], "]"}]}], ",", " ", "0."}], 
+    "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"r1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "len"}], "/", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"ang", " ", "Degree"}], "]"}]}], ",", " ", 
+     RowBox[{"len", " ", "/", " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"ang", " ", "Degree"}], "]"}]}], ",", " ", "0."}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"r2", " ", "=", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"len", " ", "/", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Alpha]", " ", "Degree"}], "]"}]}], ",", " ", 
+      RowBox[{"len", " ", "/", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Alpha]", " ", "Degree"}], "]"}]}], ",", " ", "0."}], " ", 
+     "}"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"NSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"f1", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], " ", "+", " ", 
+       RowBox[{"f2", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], " ", "==", " ", "0"}], ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f1", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], " ", "+", " ", 
+       RowBox[{"f2", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], " ", "-", " ", "w"}], " ", "==", " ", 
+      "0"}], ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Cross", "[", 
+        RowBox[{"r1", ",", " ", "f1"}], "]"}], " ", "+", " ", 
+       RowBox[{"Cross", "[", 
+        RowBox[{"r2", ",", " ", "f2"}], "]"}]}], " ", "==", " ", "0"}]}], 
+    "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", " ", "c", ",", " ", "\[Alpha]"}], "}"}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.8557786837113376`*^9, 3.8557787014211483`*^9}, {
+  3.8557791193059993`*^9, 3.8557791209972305`*^9}, {3.8557791909014797`*^9, 
+  3.8557794574360847`*^9}, {3.85577952134297*^9, 3.8557795625134907`*^9}, {
+  3.855779726197977*^9, 3.855779737555885*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"3448102f-f092-45bd-b3a5-12aa63a07c13"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "NSolve", "ifun", 
+   "\"Inverse functions are being used by \
+\\!\\(\\*RowBox[{\\\"NSolve\\\"}]\\), so some solutions may not be found; use \
+Reduce for complete solution information.\"", 2, 8, 1, 30306041619251881924, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.855779434389498*^9, 3.8557794607126937`*^9}, {
+  3.855779727360753*^9, 3.855779752110155*^9}},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"b579ad1e-2085-438a-a2f9-22aea6956d65"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"b", "\[Rule]", 
+     RowBox[{"-", "6.15886359450334`*^17"}]}], ",", 
+    RowBox[{"c", "\[Rule]", "6.15886359450334`*^17"}], ",", 
+    RowBox[{"\[Alpha]", "\[Rule]", "131.`"}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.8557794335052447`*^9, 3.8557794607196736`*^9}, {
+  3.855779727369728*^9, 3.855779752131068*^9}},
+ CellLabel->"Out[8]=",ExpressionUUID->"619b7e1c-1e4b-4d35-9fe2-ba3237f3062f"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Quit", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8557797397657986`*^9, 3.8557797413086357`*^9}},
+ CellLabel->"In[63]:=",ExpressionUUID->"8e2e229f-bd26-45a4-81fe-1a3953bbb9a2"]
+},
+WindowSize->{1440, 717},
+WindowMargins->{{1149.6, Automatic}, {Automatic, -2.4}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"00c8eced-4293-4754-baa6-760cbe89673d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 241, 5, 48, "Input",ExpressionUUID->"e9783ed1-c9ab-4d47-b668-6a7d90524c95"],
+Cell[CellGroupData[{
+Cell[824, 29, 3088, 87, 200, "Input",ExpressionUUID->"3448102f-f092-45bd-b3a5-12aa63a07c13"],
+Cell[3915, 118, 526, 12, 28, "Message",ExpressionUUID->"b579ad1e-2085-438a-a2f9-22aea6956d65"],
+Cell[4444, 132, 469, 10, 84, "Output",ExpressionUUID->"619b7e1c-1e4b-4d35-9fe2-ba3237f3062f"]
+}, Open  ]],
+Cell[4928, 145, 237, 4, 48, "Input",ExpressionUUID->"8e2e229f-bd26-45a4-81fe-1a3953bbb9a2"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
