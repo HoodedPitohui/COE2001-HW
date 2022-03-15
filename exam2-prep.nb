@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24852,        649]
-NotebookOptionsPosition[     21696,        594]
-NotebookOutlinePosition[     22100,        610]
-CellTagsIndexPosition[     22057,        607]
+NotebookDataLength[     28876,        761]
+NotebookOptionsPosition[     25493,        702]
+NotebookOutlinePosition[     25897,        718]
+CellTagsIndexPosition[     25854,        715]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -578,14 +578,122 @@ Cell[BoxData[
  CellChangeTimes->{{3.8563022453454833`*^9, 3.8563022638471675`*^9}},
  CellLabel->"In[2]:=",ExpressionUUID->"92645779-b03f-4f7d-9010-0d4b716e8b29"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
   RowBox[{"(*", 
-   RowBox[{"HW", " ", "6", " ", "P2"}], "*)"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.8563022646893997`*^9, 
-  3.856302272042556*^9}},ExpressionUUID->"0e4225a2-584f-4b57-840d-\
-bd76a87fb68c"],
+   RowBox[{"HW", " ", "6", " ", "P2"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"m", " ", "=", " ", "410."}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fW", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{"0.", ",", " ", 
+       RowBox[{
+        RowBox[{"-", "410"}], " ", "*", " ", 
+        RowBox[{"9.8", " ", "/", " ", "1000."}]}], ",", " ", "0."}], "}"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"fA", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", " ", "6.6", ",", " ", "0."}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"fC", " ", "=", " ", 
+    RowBox[{"3.9", " ", "*", " ", 
+     RowBox[{"Normalize", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"28.", " ", "Degree"}], "]"}]}], ",", " ", 
+        RowBox[{"-", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"28.", " ", "Degree"}], "]"}]}], ",", " ", "0."}], "}"}], 
+      "]"}]}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rA", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{"1.2", ",", " ", "0.", ",", " ", "0."}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rC", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1.2", " ", "+", " ", "2.0", " ", "+", " ", "2.0"}], ",", " ", 
+       "0.", ",", " ", "0."}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"rW", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1.2", " ", "+", " ", "2.0", " ", "+", "2.0"}], ")"}], " ", 
+        "/", "2"}], ",", " ", "0.", ",", " ", "0."}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"momC", " ", "=", " ", 
+     RowBox[{"Cross", "[", 
+      RowBox[{"rC", ",", " ", "fC"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"momA", " ", "=", " ", 
+     RowBox[{"Cross", "[", 
+      RowBox[{"rA", ",", " ", "fA"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"momW", " ", "=", " ", 
+     RowBox[{"Cross", "[", 
+      RowBox[{"rW", ",", " ", "fW"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"OVec", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{"Ox", ",", " ", "Oy", ",", " ", "0."}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"momB", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{"0.", ",", " ", "0.", ",", " ", "19"}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"NSolve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"OVec", "+", "fW", "+", "fA", "+", "fC"}], "==", "0."}], ",", 
+       " ", 
+       RowBox[{
+        RowBox[{
+        "momA", " ", "+", " ", "momC", "+", " ", "momB", "+", "momW"}], "==", 
+        "0."}]}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"Ox", ",", " ", "Oy"}], "}"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8563022646893997`*^9, 3.8563024532237177`*^9}, {
+  3.856302819847364*^9, 3.856302974389124*^9}, {3.8563030115210295`*^9, 
+  3.8563030380886116`*^9}},
+ CellLabel->
+  "In[123]:=",ExpressionUUID->"0e4225a2-584f-4b57-840d-bd76a87fb68c"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", "1.8309390948649742`"}], ",", 
+   RowBox[{"-", "3.4434956121498153`"}], ",", "0.`"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8563023719194784`*^9, {3.8563024209046373`*^9, 3.856302423720007*^9}, {
+   3.8563029472537236`*^9, 3.8563029748496532`*^9}, {3.8563030118018837`*^9, 
+   3.8563030573555994`*^9}},
+ CellLabel->
+  "Out[126]=",ExpressionUUID->"98102e6f-7d84-4718-abec-5765ee5893c6"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.8563023719194784`*^9, {3.8563024209046373`*^9, 3.856302423720007*^9}, {
+   3.8563029472537236`*^9, 3.8563029748496532`*^9}, {3.8563030118018837`*^9, 
+   3.85630305735859*^9}},
+ CellLabel->
+  "Out[135]=",ExpressionUUID->"c8fdbdf6-1f9f-4b50-bcb0-626fc6df8202"]
+}, Open  ]],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.8562649744797907`*^9, 
@@ -649,8 +757,12 @@ Cell[20292, 552, 385, 9, 48, InheritFromParent,ExpressionUUID->"559275c1-a57b-4c
 Cell[20680, 563, 322, 8, 32, "Output",ExpressionUUID->"8eaaa7d2-e8b6-43a1-a85e-273d685c9758"]
 }, Open  ]],
 Cell[21017, 574, 236, 4, 48, "Input",ExpressionUUID->"92645779-b03f-4f7d-9010-0d4b716e8b29"],
-Cell[21256, 580, 277, 7, 67, "Input",ExpressionUUID->"0e4225a2-584f-4b57-840d-bd76a87fb68c"],
-Cell[21536, 589, 156, 3, 28, "Input",ExpressionUUID->"3481891e-9932-481f-bde7-52c5ea1d56f6"]
+Cell[CellGroupData[{
+Cell[21278, 582, 3261, 91, 314, "Input",ExpressionUUID->"0e4225a2-584f-4b57-840d-bd76a87fb68c"],
+Cell[24542, 675, 445, 10, 32, "Output",ExpressionUUID->"98102e6f-7d84-4718-abec-5765ee5893c6"],
+Cell[24990, 687, 328, 7, 32, "Output",ExpressionUUID->"c8fdbdf6-1f9f-4b50-bcb0-626fc6df8202"]
+}, Open  ]],
+Cell[25333, 697, 156, 3, 28, "Input",ExpressionUUID->"3481891e-9932-481f-bde7-52c5ea1d56f6"]
 }
 ]
 *)
