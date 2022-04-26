@@ -1,0 +1,61 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1645,         53]
+NotebookOptionsPosition[      1178,         38]
+NotebookOutlinePosition[      1603,         54]
+CellTagsIndexPosition[      1560,         51]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"Quit", "[", "]"}]}]], "Input",
+ CellChangeTimes->{{3.8595341735437355`*^9, 3.859534175573284*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"a5a7724d-e555-44e2-ae01-1195c28b559b"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"x1", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"12", "/", "2"}], ",", " ", 
+     RowBox[{"12", " ", "+", " ", 
+      RowBox[{"6", "/", "3"}]}], ","}], " ", "}"}]}]}]], "Input",
+ CellChangeTimes->{{3.8595341768990984`*^9, 
+  3.859534223208723*^9}},ExpressionUUID->"7b56f97a-fc4e-4d87-8913-\
+645079b2921c"]
+},
+WindowSize->{573.9, 530.1},
+WindowMargins->{{283.5, Automatic}, {15.899999999999977`, Automatic}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b6be171e-ca52-4309-b6c9-27c558183df6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 234, 4, 48, "Input",ExpressionUUID->"a5a7724d-e555-44e2-ae01-1195c28b559b"],
+Cell[795, 26, 379, 10, 48, "Input",ExpressionUUID->"7b56f97a-fc4e-4d87-8913-645079b2921c"]
+}
+]
+*)
+
